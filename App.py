@@ -11,7 +11,7 @@ st.set_page_config(layout="wide")
 def fetch_poster(movie_id):
     """Fetches a movie poster URL from the TMDB API using a secret key."""
     try:
-        api_key = st.secrets["TMDB_API_KEY"]
+        api_key = st.secrets["7614b7f41265592ab869dd2b7f0aae3c"]
         url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
         response = requests.get(url)
         response.raise_for_status()
