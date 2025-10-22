@@ -61,7 +61,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Zeba's Movie Recommender System")
+st.title("Movie Recommendation System")
 movies_df, cosine_sim = load_model_assets()
 
 if movies_df is not None and cosine_sim is not None:
